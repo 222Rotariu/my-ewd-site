@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Lab 2</title>
+</head>
+<body>
+    <header>
+        <h1>Contactează-mă</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Trimite-mi un mesaj</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Datele tale</legend>
+                    <p>
+                        <label for="nume">Nume complet:</label>
+                        <input type="text" id="nume" name="nume" required placeholder="Ex: Popescu Ion">
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Ce dorești să îmi spui?</legend>
+                    <p>
+                        <label for="motiv">Motivul contactului:</label>
+                        <select id="motiv" name="motiv">
+                            <option value="pisici">Despre pisici</option>
+                            <option value="curs">Despre laborator</option>
+                            <option value="altceva">Altceva</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="mesaj">Mesajul tău:</label><br>
+                        <textarea id="mesaj" name="mesaj" rows="4" cols="40" required></textarea>
+                    </p>
+                </fieldset>
+
+                <button type="submit">Trimite Mesajul</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rotariu Alexandru-Cristian</p>
+    </footer>
+</body>
+</html>
